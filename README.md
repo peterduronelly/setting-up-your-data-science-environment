@@ -1,22 +1,47 @@
-# How to setup your Python environment for Data Analysis
+# How to setup your Python environment for Data Science & Analysis
 
-This markdown takes you through the steps of setting up your environment.
+In the next few sections we are taking the reader through the steps of setting up an environment for data science. But what is a data science enviroment?
+
+A data science environment is essentially a setup that includes the **tools, software, and hardware** needed to perform data science tasks. Here's a simple way to explain it:
+
+1. **Tools and Software**: This includes programming languages like Python or R, and specialized software like Jupyter Notebooks, which allow data scientists to write and execute code. It also involves libraries and packages data manipulation, visualization, and machine learning.
+
+2. **Data Handling**: Data scientists work with large datasets, so the environment includes databases and data storage solutions where data is collected, stored, and retrieved. This can be anything from local files to cloud storage solutions¹.
+
+3. **Processing and Analysis**: The environment provides the computational power needed to process and analyze data. This might involve local machines or cloud-based services that offer scalable computing resources.
+
+4. **Collaboration and Version Control**: Tools like Git and platforms like GitHub are used for version control and collaboration, allowing multiple data scientists to work on the same project without overwriting each other's work.
+
+5. **Model Development and Deployment**: The environment supports the development, training, and deployment of machine learning models.
+
+In summary, a data science environment is a comprehensive setup that enables data scientists to efficiently collect, process, analyze, and visualize data, as well as develop and deploy models. It combines various tools and technologies to streamline the workflow and make data-driven decision-making possible.
+
+This list is far from comprehensive, but it is sufficient to follow Data Analysis coding course on MSBA at Central European University. Beyond making students able to follow the course we are aiming to introduce such a technology stack that each data professional will need to carry out local development tasks (that is develop solutions on their own PCs or laptops). On the way we are trying to explain what these components are for and how they fit into the data science development workflow. 
+
 
 ## 1. Install Anaconda
+
+`Anaconda` is a popular open-source distribution of the Python and R programming languages, specifically designed for data science and machine learning tasks. For our purpose we can consider Anaconda as an ecosystem of the Python programming language and many tools that have been built around it to make data-focused Python development easier. 
 
 Go to https://www.anaconda.com/download and provide email to download distribution.You will get the dwonload link vie email. 
 
 Click the installer and go through the [istallation process](https://docs.anaconda.com/anaconda/install/windows/). 
+
+Once you have installed Anaconda you will have a numer of tools and solutions. When you open `Anaconda Navigator` you will see a number of applications, some of them already installed, some to be installed optionally, for your data science workflow. 
+
+![alt text](pics/anacondanavigator.PNG)
 
 
 ## 2. Download Notepad++
 
 It is a lightweight text editor which supports multiple file formats and programming languages with the appropriate formatting. (No code completion though.)
 
+VS Code (see below) and other integrated development environments (IDEs) offer a more comprehensive service than Notepad++ but sometimes it is easier to do some quick-and-dirty text editing here. 
+
 
 ## 3. Get Windows Terminal
 
-`Windows Terminal` is a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface) (`CLI`) application from Microsoft. Compared to Graphical User Interfaces (GUIs) these 'black windows' offer wider options to the experienced user to interact with applications, services, and system resources. At the beginning CLIs may look overwhelming but a little practice makes these interfaces more familiar. In many cases, running a command is much faster than opening a graphical user interface and then finding and clicking the appropriate drop-down menu to carry out a task. A CLI many times offers a wider range of customization options than GUIs.  
+`Windows Terminal` is a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface) (`CLI`) application from Microsoft. Compared to Graphical User Interfaces (GUIs) these 'black windows' offer wider options to the experienced user to interact with applications, services, and system resources. At the beginning CLIs may look overwhelming but a little practice makes these interfaces more familiar. In many cases, running a command is much faster than opening a graphical user interface (GUI) and then finding and clicking the appropriate drop-down menu to carry out a task. A CLI many times offers a wider range of customization options than GUIs.  
 
 Windows Terminal is a modern host application for many command-line shells. The primary component windows are Command Prompt and PowerShell but, as we will see it below, other command-line applications can easily be integrated to Windows Terminal. The easiest way to get it is from Microsoft Store; you can also go to https://learn.microsoft.com/en-us/windows/terminal/install for the package and the installation instructions.   
 
@@ -28,14 +53,26 @@ Anaconda also offers a command line interface called `Anaconda Prompt`. We will 
 This is a Linux OS running on your Windows computer which enables you to develop cross-platform applications, improve your data science or web development workflows and 
 manage IT infrastructure without leaving Windows.
 
+When you need to deploy your DS or DA solution to a production environment you won't be able to avoid working with Linux. WSL offers Widows users a great way to get familiar with Linux without leaving their Windows operating system. 
+
+`Windows Subsystem for Linux`, or WSL, comes in two forms: the original WSL1 and the second-generation WSL2. WSL 2 uses virtualization technology to run a `Linux kernel` on your Windows operating system. 
+
+The best way to install WSL is described [here](https://learn.microsoft.com/en-us/windows/wsl/install). For those who are interested in the opportunities using WSL we highly recommend [these turorials](https://learn.microsoft.com/en-us/windows/wsl/setup/environment). We are going to use WSL later in the program to develop containerized applications using [Docker](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers). 
+
 
 ## 4. Install git for Windows and Register to GitHub
 
-Got to https://git-scm.com/download/win and install it from here.   
+`git` is a so-called '*version controll system*' for developing, managing, and sharing your code. The main point here is [*version control*](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control): changes in code can be traced and earlier code versions can be reinstalled if new development steps result in faulty program behavior. 
+
+Git is also used for collaboration, when multiple teams develop various functions of the same application. We are not going to use this feature during the course but getting familiar with concept is a must for every developer. 
+
+Git runs locally on your PC but you can synchronize your local development with a web-based service where you can publicly share your code with others. We are using [GitHub](https://github.com/) for this purpose.  
+
+**Installation**: Go to https://git-scm.com/download/win and install it from here.   
 
 **Important!**: during the installation process select the `Use Visual Studio Code as Git's default editor` option when prompted for the default editor. Leave all other options as recommended by the installer. 
 
-Once you have installed git got to https://github.com/ and register and account. [GitHub](https://en.wikipedia.org/wiki/GitHub) is a developer platform that allows developers to create, store, manage and share their code. It has a wide range of services for companies and IT professionals. (You can even write and publish your [online books](https://www.gitbook.com/) with a related service.) GitHub is a payed service for those interested in its full capabilities but it is freely available for hosting, sharing and version-controlling computer codes. 
+Once you have installed git go to https://github.com/ and register and account. [GitHub](https://en.wikipedia.org/wiki/GitHub) is a developer platform that allows developers to create, store, manage and share their code. It has a wide range of services for companies and IT professionals. (You can even write and publish your [online books](https://www.gitbook.com/) with a related service.) GitHub is a payed service for those interested in its full capabilities but it is freely available for hosting, sharing and version-controlling our computer codes. 
 
 After registration open Windows Terminal (or Windows Powershell directly) and enter the following two commands using your username and and email address:
 ```bash
@@ -43,10 +80,16 @@ git config --global user.name "yourusername"
 git config --global user.email youremail@example.com
 ```
 
+This will make sure that you can interact with your GitHub account from your terminal of from IDE such as VS Code. 
+
 
 ## 5. Get VS Code
 
-It is one of the most widely used IDEs used in programming. The easiest way to to get it is from the Microsoft Store. Alternatively, you can download it from https://code.visualstudio.com/download.   
+VS Code is one of the most widely used IDEs used in programming. It is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET).
+
+![alt text](pics/vscode.png)
+
+The easiest way to to get it is from the Microsoft Store. Alternatively, you can download it from https://code.visualstudio.com/download.   
 
 Once you have VS Code you need the following extensions (all can be installed from the IDE):
 
@@ -69,6 +112,7 @@ Version: 0.55.0
 Publisher: David Anson   
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 
+There is basically nothing in coding and development that you cannot do using VS Code. Imagine VS Code as a frame to which we add extensions to carry out specific tasks. You can use VS Code for years without being able to discover all the functions it offers. We recommend go through [some tricks and tips](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) just get the basics. 
 
 ## 6. Create a virtual environment for your data science course
 
@@ -108,3 +152,4 @@ To access your notebook open Anaconda prompt and type
 jupyter lab
 ```
 After a few seconds your defult browser will be activated and in a separate window an url-like entry 'localhost:8888' will show. After this a notebook interface will be displayed. 
+![alt text](pics/jupyternotebook.PNG)
