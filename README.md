@@ -152,4 +152,6 @@ To access your notebook open Anaconda prompt and type
 jupyter lab
 ```
 After a few seconds your defult browser will be activated and in a separate window an url-like entry 'localhost:8888' will show. After this a notebook interface will be displayed. 
+
+
 ![alt text](pics/jupyternotebook.PNG)
