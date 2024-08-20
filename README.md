@@ -140,7 +140,7 @@ conda create --name myenv python=3.10
 ```
 where '*myenv*' is the name of your dedicated virtual environment. You can call it *py310* to indicate the Python version you are using or *dataanalysis* to remind you on what you are using the virtual environment for, or whatever name you prefer. 
 
-To activate your virtual environment open an Anaconda Prompt windows (either from the Windows menu or by opening an Anaconda Promt windows from Windoes Terminal) and type 
+To activate your virtual environment open an Anaconda Prompt windows (either from the Windows menu or by opening an Anaconda Promt windows from Windows Terminal) and type 
 ```bash
 conda activate myenv
 ```
@@ -154,7 +154,7 @@ When closing your Anaconda Prompt window, however, your virtual environment will
 
 ## 7. Open Jupyter Lab
 
-Jupyter notebooks are your primary developent tool for writing and executing Python codes. (The name 'Jupyter' comes from 'Julia, Python, R'. Using the right environment, or 'kernel', Jupter notebooks can be used to run codes in these trhee languages.) The main feature of Jupyter notebooks is its interactive nature: you can check the interim results of your workflow, you can modify your existing codes and monitor how it works. 
+Jupyter notebooks are your primary developent tool for writing and executing Python codes. (The name 'Jupyter' comes from 'Julia, Python, R'. Using the right environment, or 'kernel', Jupter notebooks can be used to run codes in these three languages.) The main feature of Jupyter notebooks is its interactive nature: you can check the interim results of your workflow, you can modify your existing codes and monitor how it works. 
 
 To make things a little confusing the name *Jupyter notebook* refers to both the tool (that is a notebook) and web-based application which serves as an IDE for these notebooks. Jupyter came out with another web-application called `Jupyter lab` (see above at Anaconda) which has additional fatures and a slightly different user interface to work with these notebooks. We recommend using Jupyter lab but the Jupter notebook application, available in the Anaconda Navigator, is also fine. 
 
@@ -170,3 +170,5 @@ After a few seconds your defult browser will be activated and in a separate wind
 
 
 ![alt text](pics/jupyternotebook.PNG)
+
+From here you can start your data science career! Good luck on your journey! 😊
