@@ -131,12 +131,20 @@ We are using `conda` to manage our environments and `pip` to download Python pac
 
 We also want to make sure that we are using a stable version of Python where all packages run fine. Users downloading Python to their laptops may have different versions, some of the working slightly differently than others. We can specify a certain Python version for each environment we use in various projects. For our project we are using Python 3.12. The following steps take you through the environment creation process. 
 
+Finally, we need all the packages in the new evnironment Anaconda provided us with during the initial installation of the base Python environment. 
+
 Type `Anadonda prompt` in the program search bar and open the application. This is a command line inteface, or CLI, with which you can interact with your Anaconda environment. This is the main environment where your Python code will run. 
+
+Save a list of packages Anaconda has provided during the original installation.
+
+```bash
+conda list -e > packages.txt
+```
 
 Create a dedicated *virtual environment* by typing   
 
 ```bash
-conda create --name myenv python=3.12
+conda create --name myenv --file packages.txt python=3.12
 ```
 where '*myenv*' is the name of your dedicated virtual environment. You can call it *py312* to indicate the Python version you are using or *dataanalysis* to remind you on what you are using the virtual environment for, or whatever name you prefer. 
 
@@ -144,7 +152,7 @@ To activate your virtual environment open an Anaconda Prompt windows (either fro
 ```bash
 conda activate myenv
 ```
-where '*myenv*' is the name of your dedicated virtual environment.
+where '*myenv*' is the name of your dedicated virtual environment. We will use `pip` to install further packages later in the course. 
 
 To deactive your environment type
 ```bash
