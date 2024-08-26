@@ -16,7 +16,7 @@ A data science environment is essentially a setup that includes the **tools, sof
 
 In summary, a data science environment is a comprehensive setup that enables data scientists to efficiently collect, process, analyze, and visualize data, as well as develop and deploy models. It combines various tools and technologies to streamline the workflow and make data-driven decision-making possible.
 
-The below is far from comprehensive, but it is sufficient to follow Data Analysis coding course on MSBA at Central European University. Beyond making students able to follow the course we are aiming to introduce such a technology stack that datas professional usualy need in their jobs to carry out local development tasks (that is develop solutions on their own PCs or laptops). We are also trying to explain what these components are for and how they fit into the data science development workflow. 
+The list of steps below is far from comprehensive, but it is sufficient to follow Data Analysis coding course on MSBA at Central European University. Beyond making students able to follow the course we are aiming to introduce such a technology stack that data professionals usually need in their jobs to carry out local development tasks (that is develop solutions on their own PCs or laptops). We are also trying to explain what these components are for and how they fit into the data science development workflow. 
 
 
 ## 1. Install Anaconda
@@ -46,7 +46,7 @@ VS Code (see below) and other integrated development environments (IDEs) offer a
 
 ## 3. Get Windows Terminal
 
-`Windows Terminal` is a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface) (`CLI`) application from Microsoft. Compared to Graphical User Interfaces (GUIs) these 'black windows' offer wider options to the experienced user to interact with applications, services, and system resources. CLIs may look overwhelming at the beginning but a little practice makes these interfaces more familiar. In many cases, running a command is much faster than opening a graphical user interface (GUI), then finding and clicking the appropriate drop-down menu to carry out a task. Commands that you can run on these interfaces usually offer a wider range of customization options than GUIs.  
+`Windows Terminal` is a [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface) (`CLI`) application from Microsoft. Compared to Graphical User Interfaces (GUIs) these 'black windows' offer wider options to the experienced user to interact with applications, services, and system resources. CLIs may look overwhelming at the beginning but a little practice makes these interfaces more familiar. In many cases, running a command is much faster than opening a graphical user interface (GUI), then finding and clicking the appropriate drop-down menu to carry out a task. Commands that you can run on these interfaces usually offer a wider range of customization options than GUIs.  
 
 Windows Terminal is a modern host application for many programs that act as command-line interpreters. These programs are called `shells`. The primary component windows are Command Prompt and PowerShell but, as we will see it below, other command-line applications can easily be integrated to Windows Terminal. The easiest way to get it is from Microsoft Store; you can also go to https://learn.microsoft.com/en-us/windows/terminal/install for the package and the installation instructions.   
 
@@ -129,16 +129,16 @@ A virtual environment is an isolated workspace for a particular project. In effe
 
 We are using `conda` to manage our environments and `pip` to download Python packages and to manage the dependencies between them. 
 
-We also want to make sure that we are using a stable version of Python where all packages run fine. Users downloading Python to their laptops may have different versions, some of the working slightly differently than others. We can specify a certain Python version for each environment we use in various projects. For our project we are using Python 3.10. The following steps take you through the environment creation process. 
+We also want to make sure that we are using a stable version of Python where all packages run fine. Users downloading Python to their laptops may have different versions, some of the working slightly differently than others. We can specify a certain Python version for each environment we use in various projects. For our project we are using Python 3.12. The following steps take you through the environment creation process. 
 
 Type `Anadonda prompt` in the program search bar and open the application. This is a command line inteface, or CLI, with which you can interact with your Anaconda environment. This is the main environment where your Python code will run. 
 
 Create a dedicated *virtual environment* by typing   
 
 ```bash
-conda create --name myenv python=3.10
+conda create --name myenv python=3.12
 ```
-where '*myenv*' is the name of your dedicated virtual environment. You can call it *py310* to indicate the Python version you are using or *dataanalysis* to remind you on what you are using the virtual environment for, or whatever name you prefer. 
+where '*myenv*' is the name of your dedicated virtual environment. You can call it *py312* to indicate the Python version you are using or *dataanalysis* to remind you on what you are using the virtual environment for, or whatever name you prefer. 
 
 To activate your virtual environment open an Anaconda Prompt windows (either from the Windows menu or by opening an Anaconda Promt windows from Windows Terminal) and type 
 ```bash
@@ -154,11 +154,11 @@ When closing your Anaconda Prompt window, however, your virtual environment will
 
 ## 7. Open Jupyter Lab
 
-Jupyter notebooks are your primary developent tool for writing and executing Python codes. (The name 'Jupyter' comes from 'Julia, Python, R'. Using the right environment, or 'kernel', Jupter notebooks can be used to run codes in these three languages.) The main feature of Jupyter notebooks is its interactive nature: you can check the interim results of your workflow, you can modify your existing codes and monitor how it works. 
+Jupyter notebooks are your primary developent tool for writing and executing Python codes. (The name 'Jupyter' comes from 'Julia, Python, R'. Using the right environment, or 'kernel', Jupter notebooks can be used to run codes in these three languages.) The main feature of a Jupyter notebook is its interactive nature: you can check the interim results of your workflow, modify your existing codes, and monitor how it works. 
 
-To make things a little confusing the name *Jupyter notebook* refers to both the tool (that is a notebook) and web-based application which serves as an IDE for these notebooks. Jupyter came out with another web-application called `Jupyter lab` (see above at Anaconda) which has additional fatures and a slightly different user interface to work with these notebooks. We recommend using Jupyter lab but the Jupter notebook application, available in the Anaconda Navigator, is also fine. 
+To make things a little confusing the name *Jupyter notebook* refers to both the tool (that is a notebook) and web-based application which serves as an IDE for these notebooks. Jupyter offers  another, more recent web application called `Jupyter lab` (see above at Anaconda) which has additional fatures and a slightly different user interface. We recommend using Jupyter lab but the Jupter notebook application, available in the Anaconda Navigator, is also fine. 
 
-The word *web application* should not deceive anyone. The Jupyter lab application runs on your laptop in your browser by essentially making your laptop as a web server. 
+The word *web application* should not deceive anyone. The Jupyter lab application runs on your laptop in your browser by using your laptop as a web server. 
 
 Jupter notebooks can also be run using VS Code by installing the appropriate extension. Notebooks in VS Code, however, execute codes a little slower than in Jupyter lab so we recommend using the latter for these purposes.
 
