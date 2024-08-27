@@ -1,6 +1,8 @@
 # How to setup your Python environment for Data Science & Analysis
 
-In the next few sections we are taking the reader through the steps of setting up an environment for data science. But what is a data science enviroment?
+In the next few sections we are taking the reader through the steps of setting up an environment for data science. **Data Science and Analysis** is a collection of activities covering data management, wrangling and discovery, modeling relationships (with parametric models like linear regressions, or non-parametric ones like random forest), prediction in cross-section or time series, as well as building and testing causal inference models. For a collection of applications, see [Data Analysis Case Studies](https://gabors-data-analysis.com/casestudies/).
+
+But what is a data science enviroment?
 
 A data science environment is essentially a setup that includes the **tools, software, and hardware** needed to perform data science tasks. Here's a simple way to explain it:
 
@@ -16,7 +18,7 @@ A data science environment is essentially a setup that includes the **tools, sof
 
 In summary, a data science environment is a comprehensive setup that enables data scientists to efficiently collect, process, analyze, and visualize data, as well as develop and deploy models. It combines various tools and technologies to streamline the workflow and make data-driven decision-making possible.
 
-The list of steps below is far from comprehensive, but it is sufficient to follow Data Analysis coding course on MSBA at Central European University. Beyond making students able to follow the course we are aiming to introduce such a technology stack that data professionals usually need in their jobs to carry out local development tasks (that is develop solutions on their own PCs or laptops). We are also trying to explain what these components are for and how they fit into the data science development workflow. 
+The list of steps below is far from comprehensive, but it is sufficient to follow the Data Analysis coding courses ([introductory data analysis](https://courses.ceu.edu/courses/2023-2024/data-analysis-1-exploration-business-analytics-track), [coding](https://courses.ceu.edu/courses/2023-2024/coding-1-data-management-and-analysis-python) or [machine learning](https://courses.ceu.edu/courses/2023-2024/data-analysis-3-prediction-and-introduction-machine-learning)) on MSBA at Central European University. Beyond making students able to follow the course we are aiming to introduce such a technology stack that data professionals usually need in their jobs to carry out local development tasks (that is develop solutions on their own PCs or laptops). We are also trying to explain what these components are for and how they fit into the data science development workflow. 
 
 
 ## 1. Install Anaconda
@@ -168,7 +170,7 @@ To make things a little confusing the name *Jupyter notebook* refers to both the
 
 The word *web application* should not deceive anyone. The Jupyter lab application runs on your laptop in your browser by using your laptop as a web server. 
 
-Jupter notebooks can also be run using VS Code by installing the appropriate extension. Notebooks in VS Code, however, execute codes a little slower than in Jupyter lab so we recommend using the latter for these purposes.
+Jupyter notebooks can also be run using VS Code by installing the appropriate extension. Notebooks in VS Code, however, execute codes a little slower than in Jupyter lab so we recommend using the latter for these purposes.
 
 To access Jupyter lab open Anaconda prompt and type 
 ```bash
